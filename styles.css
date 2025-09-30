@@ -1,0 +1,23 @@
+:root { --bg:#0b0c10; --fg:#ffffff; --muted:#b6c0cb; --brand:#6ee7b7; }
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--fg)}
+.container{max-width:1120px;margin:0 auto;padding:24px}
+.nav{display:flex;gap:24px;align-items:center;justify-content:flex-end}
+.logo{margin-right:auto;height:28px}
+.nav a{color:var(--muted);text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr 0.9fr;align-items:center;gap:32px;padding:48px 0}
+.hero h1{font-size:48px;line-height:1.05;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0 0 24px}
+.cta{display:flex;gap:12px}
+.btn{padding:12px 18px;background:var(--brand);border-radius:12px;color:#073b2d;text-decoration:none;font-weight:700}
+.btn.ghost{background:transparent;border:1px solid var(--brand);color:var(--fg)}
+.hero-img{width:100%;max-width:520px;justify-self:end}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:48px 0}
+.features article{background:#11151a;border:1px solid #1b232b;border-radius:16px;padding:20px}
+.section{padding:48px 0}
+.img-fluid{width:100%;border-radius:16px;border:1px solid #1b232b}
+.footer{border-top:1px solid #1b232b;padding:24px 0;margin-top:48px;color:#8d9aa7}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-img{justify-self:start}
+  .features{grid-template-columns:1fr}
+}
